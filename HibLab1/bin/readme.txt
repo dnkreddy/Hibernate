@@ -1,0 +1,1 @@
+This example done with XML configurations.

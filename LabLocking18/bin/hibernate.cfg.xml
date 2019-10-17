@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd"> 
+
+<hibernate-configuration>   
+  
+	<session-factory>
+	      <!-- Database specific details -->  
+			 <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>  
+			 <property name="connection.username">system</property>  
+			 <property name="connection.password">Lavi@123</property>  
+			 <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property> 
+		  <!-- Database specific details  ends--> 
+		  
+		  <!-- Hibernate specific properties starts -->
+			 <property name="dialect">org.hibernate.dialect.OracleDialect</property> 
+			 <property name="show_sql">true</property>   
+			 <!-- <property name="hbm2ddl.auto">create | validate | update | create-drop </property> -->
+          <property name="hbm2ddl.auto">update</property>      
+		   <!-- Hibernate specific properties starts -->
+		   
+		   <!-- mapping the resources starts -->
+			   <mapping class="com.lavi.training.model.Student" />
+		    <!-- mapping the resources starts -->
+	 </session-factory>  
+  
+</hibernate-configuration>  

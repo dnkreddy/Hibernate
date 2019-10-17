@@ -1,0 +1,11 @@
+<hibernate-mapping package="com.lavi.hibernate">
+	<class name="Employee" table="Employee">
+	<id name="eid" column="eid" type="int">
+	  <generator class="assigned">
+	  </generator>
+	</id>
+	<property name="eName" column="ENAME"/>
+	<property name="email" column="EMAIL"/>
+	<property name="ephoneNo" column="EPHONENO"/>
+	</class>
+</hibernate-mapping>
